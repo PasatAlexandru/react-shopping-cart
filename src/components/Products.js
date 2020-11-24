@@ -18,9 +18,8 @@ export class Products extends Component {
                                         display: "inline-block",
                                         width:"50%"
                                     }}>{formatCurrency(product.price)}</div>
-                                    <button
-                                        className="button primary"
-                                        style={{width:"50%"}}
+                                    <button onClick = { ()=>this.props.addToCart(product)}   className="button primary"
+                                         style={{width:"50%"}}
                                     >Add To Cart</button>
                                 </div>
                             </div>
